@@ -149,8 +149,10 @@ main {
 }
 
 .tarjeta {
-    position: relative;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     margin-bottom: 10px;
     padding: 7px;
     border: 1px solid var(--azul);
@@ -159,11 +161,9 @@ main {
 }
 
 .tarjeta img {
-    display: block;
-    width: 400px;
+    align-self: center;
+    width: auto;
     height: auto;
-    margin-bottom: var(--espacio-s);
-    border-radius: 5px;
 }
 .tarjeta:hover{
     outline: 5px solid var(--blanco);
@@ -183,5 +183,5 @@ table, th, td{
 img{
     display: block;
     max-width: 100%;
-    height: 20rem;
+    height: auto;
 }
