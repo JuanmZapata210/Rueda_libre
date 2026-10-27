@@ -141,3 +141,8 @@ Contraste de colores
 -Blanco sobre Azul Noche: 15.97:1 - Apta para texto normal
 
 Ninguna quedo en texto grande que seria entre 3 y 4.5
+
+
+SEMANA 2
+Estrecha poco a poco la ventana del navegador y describe en la bitácora qué ocurre con el encabezado y el pie.
+-Al tener flex-wrap: wrap; lo que pasa es que el cointenido al no caber mas en la fila se va desplazando para abajo y asi con todos para que pueda verse bien en dispositivos mas pequeños
