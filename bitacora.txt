@@ -1,0 +1,143 @@
+﻿url: http://127.0.0.1:3000/index.html
+protocolo: http
+host: 127.0.0.1:3000
+puerto: 3000
+ruta: /index.html
+metodo de peticion: GET
+codigo de estado: 200 OK
+
+
+Al buscar promociones/html
+File not found
+
+
+The file "/home/cohorte8/JuanZapata/rueda-libre/index.html/promociones. html" cannot be found. It may have been moved, edited, or deleted.
+ 
+- Esto pasa porque se intenta buscar una ruta que aun no esta creada en el proyecto por lo cual el sistema rechaza la peticion y suelta el error 
+
+
+
+
+Roles en rueda-libre
+- HTML: Es el esqueleto del sitio, es como la estructura ahi se define lo que tiene la pagina.
+Ejemplo: Un catalogo con las biclicetas, ejemplo bicileta de montaña, esta seria una vista del catalogo
+- CSS: Es donde se definen los estilos y como se ve la pagina.
+Ejemplo: Cambiar el fono, el tipo de letra, el tamaño etc.
+- JavaScript: con JavaScript se haran todas las interacciones
+Ejemplo: Crear un boton que sea agregar carrito, algun filtro para buscar bicis por su cuenta
+
+
+Tabla de rutas
+
+
+Archivo origen
+	destino
+	ruta
+	index.html
+	tarifas
+	/pages/tarifas.html
+
+
+	index.html
+	reservas
+	/pages/reservas.html
+
+
+	index.html
+	google maps
+	https://www.google.com/maps
+
+
+	index.html
+	correo electroniuco
+	mailto:correo.hola@ruedalibre.example
+
+
+	tarifas.html
+	index
+	../index.html
+	tarifas.html
+	reservas
+	reservas.html
+	reservas.html
+	inicio
+	../index.html
+	reservas.html 
+	tarifas
+	tarifas.html
+
+Reto dia 2
+
+Esquema de region Index.html
+Encabezado (header): imagen de portada, el h1, bienvenida
+	(nav): enlaces a tarifas y reservas
+Contenido principal (main)
+	Sección: ¿Quiénes somos? 
+	Sección: Nuestros servicios 
+		Artículo: Tipo de bicicleta 
+		Artículo: Alquiler por horas 
+		Artículo: Alquiler por día completo 
+		Artículo: Tour guiado 
+		Artículo: Rutas 
+	Sección: ¿Cómo alquilar? 
+	Sección: Beneficios de alquilar con nosotros 
+Contenido complementario (aside): enlaces de interés 
+Pie de página (footer): nombre del negocio, correo de contacto y año 
+
+Esquema de region tarifas.html
+Encabezado (header): h1, imagen, frase introductoria
+	(nav): enlaces a inicio y reservas
+Contenido principal (main)
+	Sección: Tarifas de alquiler (con su tabla)
+	Sección: Tarifa recorridos guiados (con su tabla y enlace para reservar)
+	Sección: Información adicional
+		Contenido complementario (aside): Recuerda llevar
+Pie de página (footer): nombre del negocio, correo de contacto, año y enlace para volver al inicio.
+
+Esquema de region reservas.html
+Encabezado (header): h1
+	(nav): enlaces a inicio y tarifas
+Contenido principal (main)
+	Sección: Correo de contacto
+	Contenido complementario (aside): Horario de atención
+Pie de página (footer): nombre del negocio, correo de contacto y año
+
+
+Segunda parte:
+- Se uso el type:Radio para seleccionar el plan que el usuario queria porque asi se aseguraba que solo se eligira una opcion.
+- Se uso un select para la seleccion del tipo de bicicleta y para seleccionar el recorrido guiado porque son listas cortas de opciones fijas. El select ocupa poco espacio, obliga a escoger un valor válido y evita los errores que a veces se tienen en escritura.
+- Se uso type="text" con inputmode="numeric" para el numero de documento porque type="number" muestra flechas de subir y bajar, y puede borrar los ceros iniciales.
+
+Tercera parte
+Verificacion 
+- nombre: ja - Suelta error debe contener mas de 3 letras
+- documento: 101 - suelta error debe tener entre 6 y 10 numeros
+- documento: 10101010101101 - suelta error debe tener entre 6 y 10 numeros
+- correo electroniuco: jaja@gmail - suelta error debe tener el .com
+- fecha alquiler: solo acepta del 1 de noviembre a el 31 de diciembre
+- cantidad de bicicletas: solo se deja poner entre 1 y 6 
+- celular: 219456876 - suelta error debe empezar por 3
+- celular: 319876 - Suelta erro debe contener 10 numeros
+- comentarios: solo acepta 300 caracteres
+- Acepto politicas de privacidad: si no esta marcado no se manda el formulario
+
+Cuarta parte
+Hallzagos 
+- Las tres paginas estaban en <html lang="en"> quiere decir en ingles, deben estar en es, en español.
+- Tenia varios alt muy pobres y sin describir si la imagen es solo decorativa.
+- Cambie <a href="/pages/reservas.html">Aqui puedes reservar</a> mas especificamente cambie aqui puedes reservar porque sin contexto no se entiende y le puse reservar bicicleta.
+- Cambie la descripcion del enlace del correo electronico porque no se entendia a donde iba, la cambie por escribenos a nuestro correo electronico.
+- Correcion en un h2 que pasaba de una a h4 sin usar el h3.
+
+
+Contraste de colores
+-Blanco sobre Verde Ruta: 5.31:1 - Apta para texto normal
+-Blanco sobre Naranja Pedal: 2.22:1 - No apta
+-Azul Noche sobre Naranja Pedal: 7.20:1	- Apta para texto normal.
+-Azul Noche sobre Crema: 14.83:1 - Apta para texto normal
+-Gris Asfalto sobre Crema: 5.57:1 - Apta para texto normal
+-Verde Ruta sobre Crema:	4.93:1 - Apta para texto normal
+-Naranja Pedal sobre Crema: 2.06:1 -	No apta
+-Blanco sobre Azul Noche: 15.97:1 - Apta para texto normal
+
+Ninguna quedo en texto grande que seria entre 3 y 4.5
