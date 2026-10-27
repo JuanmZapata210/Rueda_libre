@@ -41,19 +41,19 @@ footer {
     border-top: 4px solid var(--naranja);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, var(--azul), #1F3A6B);
-    padding: 1rem 45rem;
+    padding: 1.5rem;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 header {
     display: flex;
-    padding: 1rem 13rem;
+    padding: 1.5rem;
     justify-content: center;
     background: linear-gradient(135deg, var(--azul), #1F3A6B);
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -91,9 +91,11 @@ main {
     max-width: 50rem;
     margin: 0 auto;
     padding: 1.5rem ;
+    flex-wrap: wrap;
 }
 
 #menu {
+    flex-wrap: wrap;
     display: flex;
     gap: 20px;
     padding: 8px;
@@ -174,8 +176,8 @@ table {
     border-collapse: collapse;
     margin: 1rem 0 1.5rem;
 }
-
-img {
+img{
+    display: block;
     max-width: 100%;
-    height: auto;
+    height: 20rem;
 }
