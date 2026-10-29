@@ -59,7 +59,7 @@ header {
     flex-wrap: wrap;
     gap: 1rem 20rem;
     border-bottom: 4px solid var(--naranja);
-    padding: 1.5rem ;
+    padding: 1.5rem;
 
 }
 
@@ -168,7 +168,8 @@ main {
     justify-content: center;
     width: 200px;
     height: 200px;
-    object-fit: fill; /*Se usa para que las imagenes tengan un tamaño fijo, con el fill deforma la imagen pero hace que se vea completa, si se usara cover, corta la imagen*/
+    object-fit: fill;
+    /*Se usa para que las imagenes tengan un tamaño fijo, con el fill deforma la imagen pero hace que se vea completa, si se usara cover, corta la imagen*/
 }
 
 .tarjeta:hover {
@@ -192,10 +193,12 @@ td {
 
 img {
     display: block;
+    justify-content: center;
     width: 400px;
     height: 300px;
     min-width: 0;
 }
+
 .flota {
     display: flex;
     flex-direction: row;
@@ -203,11 +206,12 @@ img {
     gap: 20px;
 
 }
-.flota-container{
+
+.flota-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    
+
 }
 
 .rutas {
@@ -222,47 +226,139 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
-.portada{
+
+.portada {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
-.portada-texto{
+
+.portada-texto {
     width: 500px;
 }
-.portada img{
+
+.portada img {
     margin-top: 15px;
     height: 200px;
-    width: 200px;  
+    width: 200px;
 }
-.formulario{
+
+.formulario {
     text-align: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-.form h2{
+
+.form h2 {
     text-align: center;
     justify-content: center;
 }
 
-.form-info{
+.form-info {
     display: flex;
     flex-direction: column;
 }
-.btn-reserva{
+
+.btn-reserva {
     margin-top: 5px;
     text-align: center;
 }
-.inf-adicional{
+
+.inf-adicional {
     display: flex;
     justify-content: center;
     text-align: center;
     gap: 70px 50px;
 }
-.inf-adicional ul{
+
+.inf-adicional ul {
     display: inline-block;
+}
+
+@media (min-width: 360px) {
+    .header-360 {
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem 20rem;
+        padding: 1.5rem;
+
+    }
+
+    .flota-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .rutas-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    img {
+        display: block;
+        width: 300px;
+        height: 200px;
+        min-width: 0;
+    }
+
+    .main-formulario {
+        font-size: 0.8rem;
+
+    }
+
+    .formulario {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .flota-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .rutas-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .flota-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+
+    .rutas-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--azul), #1F3A6B);
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 4px solid var(--naranja);
+        font-size: 10.8px;
+
+    }
+
+
+
 }
