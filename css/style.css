@@ -160,8 +160,6 @@ main {
     padding: 7px;
     border: 1px solid var(--azul);
     border-radius: 0.5rem;
-    margin-bottom: 10px;
-    width: 100%;
 }
 
 .tarjeta img {
@@ -195,6 +193,7 @@ img {
     display: block;
     width: 400px;
     height: 300px;
+    min-width: 0;
 }
 .flota {
     display: flex;
@@ -211,13 +210,10 @@ img {
 }
 
 .rutas {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2px;
     gap: 20px;
     flex-wrap: wrap;
-
-
 }
 
 .rutas-container {
@@ -227,13 +223,31 @@ img {
 }
 .portada{
     display: flex;
-    gap: 50px;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.portada-texto{
+    width: 500px;
 }
 .portada img{
+    margin-top: 15px;
     height: 200px;
     width: 200px;  
 }
-.form-reserva{
-    justify-content: flex-start;
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+}
+.btn-reserva{
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
 }
