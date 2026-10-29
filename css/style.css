@@ -55,12 +55,11 @@ header {
     justify-content: center;
     background: linear-gradient(135deg, var(--azul), #1F3A6B);
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1rem 20rem;
     border-bottom: 4px solid var(--naranja);
-    padding: 1.5rem;
+    padding: 1.5rem ;
 
 }
 
@@ -91,9 +90,9 @@ footer a {
 }
 
 main {
-    max-width: 50rem;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     flex-wrap: wrap;
 }
 
@@ -107,6 +106,8 @@ main {
 }
 
 #menu a {
+    text-align: center;
+    justify-content: center;
     color: var(--azul);
 }
 
@@ -204,7 +205,7 @@ img {
 }
 .flota-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     
 }
@@ -237,17 +238,31 @@ img {
     width: 200px;  
 }
 .formulario{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+.form h2{
+    text-align: center;
+    justify-content: center;
+}
+
 .form-info{
     display: flex;
     flex-direction: column;
 }
 .btn-reserva{
+    margin-top: 5px;
     text-align: center;
+}
+.inf-adicional{
+    display: flex;
     justify-content: center;
-    margin-top: 10px;
+    text-align: center;
+    gap: 70px 50px;
+}
+.inf-adicional ul{
+    display: inline-block;
 }
