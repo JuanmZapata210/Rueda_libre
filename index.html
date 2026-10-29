@@ -44,12 +44,17 @@
     </header>
 
     <main>
-        <section>
-            <h2 id="quienes-somos">¿Quienes somos?</h2>
-            <img src="img/bicicleta.jpg" alt="imagen de biciclta, la imagen es decorativa" width="200">
-            <p>Somos una pagina en la cual puedes realizar el alquier de bicicletas, elegir que tipo de bicicleta deseas
-                ya sea electrica o no y disfrutar de todos los beneficios que tiene alquilar con nosotros</p>
-            <a href="http://127.0.0.1:3000/index.html">Encuentranos</a>
+        <section class="portada">
+            <div>
+                <h2 id="quienes-somos">¿Quienes somos?</h2>
+                <p>Somos una pagina en la cual puedes realizar el alquier de bicicletas, elegir que tipo de bicicleta
+                    deseas
+                    ya sea electrica o no y disfrutar de todos los beneficios que tiene alquilar con nosotros</p>
+                <a href="http://127.0.0.1:3000/index.html">Encuentranos</a>
+            </div>
+            <div class="portada-img">
+                <img src="img/bicicleta.jpg" alt="imagen de biciclta, la imagen es decorativa" width="200">
+            </div>
         </section>
 
         <section>
@@ -77,80 +82,97 @@
                 <p>Ademas incluimos el servicio de Tour guiado, este servicio incluye un viaje guiado por el lugar que
                     elijas</p>
             </article>
+            <section class="rutas">
+                <h2>Nuestras rutas</h2>
+                <div class="rutas-container">
+                    <article class="tarjeta">
+                        <h3>Rio y parques</h3>
+                        <img src="img/ruta.jpg" alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
+                        <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Sabores de barrio</h3>
+                        <img src="img/ruta.jpg" alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
+                        <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Reto las Palmas</h3>
+                        <img src="img/ruta.jpg" alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
+                        <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
+                    </article>
+                </div>
 
-            <article class="tarjeta">
-                <h3>Rutas</h3>
-                <p>Incluimos rutas para nuestro tour guiado</p>
-                <img src="img/ruta.jpg" alt="Ruta de nuestro tour, la imagen es solo decorativa" width="350"
-                    height="300"><br>
-                <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
-            </article>
+
+            </section>
+
+
 
             <p><a href="pages/tarifas.html">Accede a nuestras tarifas</a></p>
         </section>
         <section class="flota">
             <h2>Nuestra flota</h2>
+            <div class="flota-container">
+                <article class="tarjeta">
+                    <h3>Urbana Clasica</h3>
+                    <img src="img/bicicleta-clasica.png" alt="Bicicleta urbana clásica">
+                    <h4>Descripcion</h4>
+                    <p>Comoda y liviana para las ciclorrutas.</p>
+                    <h4>Precio por hora</h4>
+                    <p>$10.000</p>
+                    <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
+                </article>
+                <article class="tarjeta">
+                    <h3>Urbana Plegable</h3>
+                    <img src="img/bicicleta-pegable.jpg" alt="Bicicleta urbana plegable">
+                    <h4>Descripcion</h4>
+                    <p>Se dobla en segundos; ideal para combinar con el metro.</p>
+                    <h4>Precio por hora</h4>
+                    <p>$12.000</p>
+                    <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
+                </article>
+                <article class="tarjeta">
+                    <h3>Montaña Trail</h3>
+                    <img src="img/montaña-trail.jpg" alt="Bicicleta de montaña Trail">
+                    <h4>Descripcion</h4>
+                    <p>Suspension delantera y 21 cambios para las subidas.</p>
+                    <h4>Precio por hora</h4>
+                    <p>$15.000</p>
+                    <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
+                </article>
+                <article class="tarjeta">
+                    <h3>Gravel Aventura</h3>
+                    <img src="img/gravel-aventura.jpg" alt="Bicicleta gravel Aventura">
+                    <h4>Descripcion</h4>
+                    <p>Para rutas mixtas de asfalto y destapado.</p>
+                    <h4>Precio por hora</h4>
+                    <p>$18.000</p>
+                    <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
+                </article>
 
-            <article class="tarjeta">
-                <h3>Urbana Clasica</h3>
-                <img src="img/bicicleta-clasica.png" alt="Bicicleta urbana clásica">
-                <h4>Descripcion</h4>
-                <p>Comoda y liviana para las ciclorrutas.</p>
-                <h4>Precio por hora</h4>
-                <p>$10.000</p>
-                <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
-            </article>
+                <article class="tarjeta">
+                    <span class="etiqueta-nuevo">Nuevo</span>
+                    <h3>Electrica Urbana</h3>
+                    <img src="img/electrica-urbana.jpg" alt="Bicicleta eléctrica urbana">
+                    <h4>Descripcion</h4>
+                    <p>Asistencia electrica con 45 km de autonomia.</p>
+                    <h4>Precio por hora</h4>
+                    <p>$25.000</p>
+                    <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
+                </article>
 
-            <article class="tarjeta">
-                <h3>Urbana Plegable</h3>
-                <img src="img/bicicleta-pegable.jpg" alt="Bicicleta urbana plegable">
-                <h4>Descripcion</h4>
-                <p>Se dobla en segundos; ideal para combinar con el metro.</p>
-                <h4>Precio por hora</h4>
-                <p>$12.000</p>
-                <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
-            </article>
+                <article class="tarjeta">
+                    <h3>Infantil</h3>
+                    <img src="img/infantil.jpg" alt="Bicicleta infantil">
+                    <h4>Descripcion</h4>
+                    <p>Para niños de 6 a 10 años.</p>
+                    <h4>Precio por hora</h4>
+                    <p>$8.000</p>
+                    <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
+                </article>
 
-            <article class="tarjeta">
-                <h3>Montaña Trail</h3>
-                <img src="img/montaña-trail.jpg" alt="Bicicleta de montaña Trail">
-                <h4>Descripcion</h4>
-                <p>Suspension delantera y 21 cambios para las subidas.</p>
-                <h4>Precio por hora</h4>
-                <p>$15.000</p>
-                <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
-            </article>
+            </div>
 
-            <article class="tarjeta">
-                <h3>Gravel Aventura</h3>
-                <img src="img/gravel-aventura.jpg" alt="Bicicleta gravel Aventura">
-                <h4>Descripcion</h4>
-                <p>Para rutas mixtas de asfalto y destapado.</p>
-                <h4>Precio por hora</h4>
-                <p>$18.000</p>
-                <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
-            </article>
 
-            <article class="tarjeta">
-                <span class="etiqueta-nuevo">Nuevo</span>
-                <h3>Electrica Urbana</h3>
-                <img src="img/electrica-urbana.jpg" alt="Bicicleta eléctrica urbana">
-                <h4>Descripcion</h4>
-                <p>Asistencia electrica con 45 km de autonomia.</p>
-                <h4>Precio por hora</h4>
-                <p>$25.000</p>
-                <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
-            </article>
-
-            <article class="tarjeta">
-                <h3>Infantil</h3>
-                <img src="img/infantil.jpg" alt="Bicicleta infantil">
-                <h4>Descripcion</h4>
-                <p>Para niños de 6 a 10 años.</p>
-                <h4>Precio por hora</h4>
-                <p>$8.000</p>
-                <a class="boton-accion" href="pages/reservas.html">Reserva ahora</a>
-            </article>
         </section>
 
         <section>
