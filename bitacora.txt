@@ -144,9 +144,14 @@ Ninguna quedo en texto grande que seria entre 3 y 4.5
 
 
 SEMANA 2
+Dia1
 Estrecha poco a poco la ventana del navegador y describe en la bitácora qué ocurre con el encabezado y el pie.
 -Al tener flex-wrap: wrap; lo que pasa es que el cointenido al no caber mas en la fila se va desplazando para abajo y asi con todos para que pueda verse bien en dispositivos mas pequeños
 
 Registra en la bitácora, para cada caso (portada, galería, reservas, fila del formulario, encabezado y pie),
 -Use display: grid; grid-template-columns: repeat(3, 1fr); para las imaganes de las rutas y las bicicletas para que quedaran de a 3 como maximo
--En el HEADER Y FOOTER use display flex para que me quedaran horizontalmente
+-En el HEADER Y FOOTER use display flex para que me quedaran horizontalmente.
+
+Dia2
+Registra en la bitácora: tiempo invertido, líneas de CSS de distribución de la flota en tu versión propia frente a clases usadas ahora, qué te dio Bootstrap sin esfuerzo y qué control perdiste.
+-Inverti mucho tiempo ya que no entendia como funcionaba boostrap, me toco mirar bien como funcionaba cada cosa yu ver como lo usaba 
