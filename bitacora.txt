@@ -155,3 +155,10 @@ Registra en la bitácora, para cada caso (portada, galería, reservas, fila del 
 Dia2
 Registra en la bitácora: tiempo invertido, líneas de CSS de distribución de la flota en tu versión propia frente a clases usadas ahora, qué te dio Bootstrap sin esfuerzo y qué control perdiste.
 -Inverti mucho tiempo ya que no entendia como funcionaba boostrap, me toco mirar bien como funcionaba cada cosa yu ver como lo usaba 
+
+Registra en la bitácora cinco clases que encontraste buscando en la documentación y qué hace cada una
+-d-flex es el display flex
+-Col-* es para ver como se va separar la pantalla depende el tamaño, muy util para hacerla responsive
+-Gap-* para dar espacio horizontalmente
+-Fw-bold Para poner el texto en negrilla
+-Fs-* para agrandar el tamaño de la letra
