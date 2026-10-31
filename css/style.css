@@ -51,7 +51,6 @@ footer {
 
 header {
     display: flex;
-    padding: 1.5rem;
     justify-content: center;
     background: linear-gradient(135deg, var(--azul), #1F3A6B);
     flex-direction: row;
@@ -190,7 +189,7 @@ th,
 td {
     border: 1px solid black;
 }
-
+/*
 img {
     display: block;
     justify-content: center;
@@ -198,7 +197,7 @@ img {
     height: 300px;
     min-width: 0;
 }
-
+*/
 .flota {
     display: flex;
     flex-direction: row;
@@ -339,13 +338,13 @@ img {
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
     }
-
+/*
     .rutas-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
     }
-
+*/
     header {
         display: flex;
         justify-content: center;
