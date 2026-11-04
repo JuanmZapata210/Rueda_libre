@@ -13,7 +13,6 @@
 
 body {
     margin: 0;
-    font-family: var(--fuente-texto);
     color: var(--azul);
     background-color: var(--crema);
 }
@@ -29,12 +28,6 @@ a {
     text-decoration: underline;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-    outline: 3px solid var(--azul);
-    outline-offset: 2px;
-}
 
 footer {
     color: var(--blanco);
@@ -50,23 +43,14 @@ footer {
 }
 
 header {
-    display: flex;
-    justify-content: center;
     background: linear-gradient(135deg, var(--azul), #1F3A6B);
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem 20rem;
     border-bottom: 4px solid var(--naranja);
-    padding: 1.5rem;
-
 }
 
 header a:hover {
     color: var(--crema);
     background-color: var(--naranja);
     text-decoration: underline;
-
 }
 
 
@@ -92,7 +76,7 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem 2rem;
-    flex-wrap: wrap;
+
 }
 
 #menu {
@@ -151,79 +135,13 @@ main {
     outline-offset: 3px;
 }
 
-.tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    padding: 7px;
-    border: 1px solid var(--azul);
-    border-radius: 0.5rem;
-}
-
-.tarjeta img {
-    align-self: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    object-fit: fill;
-    /*Se usa para que las imagenes tengan un tamaño fijo, con el fill deforma la imagen pero hace que se vea completa, si se usara cover, corta la imagen*/
-}
-
 .tarjeta:hover {
     outline: 5px solid var(--blanco);
-
-
 }
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0 1.5rem;
-
-}
-
 table,
 th,
 td {
     border: 1px solid black;
-}
-/*
-img {
-    display: block;
-    justify-content: center;
-    width: 400px;
-    height: 300px;
-    min-width: 0;
-}
-*/
-.flota {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-
-}
-
-.flota-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-
-}
-
-.rutas {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.rutas-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
 }
 
 .portada {
@@ -243,25 +161,6 @@ img {
     height: 200px;
     width: 200px;
 }
-
-.formulario {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.form h2 {
-    text-align: center;
-    justify-content: center;
-}
-
-.form-info {
-    display: flex;
-    flex-direction: column;
-}
-
 .btn-reserva {
     margin-top: 5px;
     text-align: center;
@@ -274,12 +173,10 @@ img {
     gap: 70px 50px;
 }
 
-.inf-adicional ul {
-    display: inline-block;
-}
+
 
 @media (min-width: 360px) {
-    .header-360 {
+    .header {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -288,75 +185,11 @@ img {
 
     }
 
-    .flota-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
-    }
-
-    .rutas-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
-    }
-
     img {
         display: block;
         width: 300px;
         height: 200px;
         min-width: 0;
     }
-
-    .main-formulario {
-        font-size: 0.8rem;
-
-    }
-
-    .formulario {
-        font-size: 0.9rem;
-    }
 }
 
-@media (min-width: 768px) {
-    .flota-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-    }
-
-    .rutas-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .flota-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-    }
-/*
-    .rutas-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-    }
-*/
-    header {
-        display: flex;
-        justify-content: center;
-        background: linear-gradient(135deg, var(--azul), #1F3A6B);
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        border-bottom: 4px solid var(--naranja);
-        font-size: 10.8px;
-
-    }
-
-
-
-}
