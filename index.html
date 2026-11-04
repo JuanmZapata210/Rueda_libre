@@ -17,35 +17,36 @@
 
 <body>
     <header class="container-fluid">
-        <div class="row py-5" style="max-width: 1050px;">
-            <div class="col-lg-6">
-                <h1>Rueda Libre</h1>
-                <img class="portada" src="img/portada.jpg"
-                    alt="Portada alquiler de bicicletas, la imagen es solo decorativa">
-                <p>Bienvenido a la mejor pagina de todo el universo en alquiler de bicicletas de todo medellin <br>
-                    Lo invitamos a que siga navegando</p>
+          <div class="container" style="max-width: 1100px;">
+            <div class="row py-5">
+                <div class="col-lg-6">
+                    <h1>Rueda Libre</h1>
+                    <img class="portada mb-2" src="img/portada.jpg"
+                        alt="Portada alquiler de bicicletas, la imagen es solo decorativa">
+                    <p>Bienvenido a la mejor pagina de todo el universo en alquiler de bicicletas de todo medellin <br>
+                        Lo invitamos a que siga navegando</p>
+                </div>
+
+                <nav class="col-12 col-sm-6 col-lg-6 d-flex row align-items-center px-5">
+                    <h2>Menu</h2>
+                    <ul id="menu">
+                        <li><a href="pages/tarifas.html">Lista de tarifas y rutas</a></li>
+                        <li><a href="pages/reservas.html">Reservar bicicleta</a></li>
+                        <li><a class="activo" href="index.html">Pagina actual</a></li>
+                    </ul>
+                    <nav>
+                        <ul id="menu2">
+                            <a href="#quienes-somos">¿Quienes somos?</a>
+                            <a href="#nuestros-servicios">Nuestros servicios</a>
+                            <a href="#como-alquilar">Como alquilar</a>
+
+                        </ul>
+                    </nav>
+                </nav>
+
             </div>
 
-            <nav class="col-12 col-sm-6 col-lg-6 d-flex row align-items-center">
-                <h2>Menu</h2>
-                <ul id="menu">
-                    <li><a href="pages/tarifas.html">Lista de tarifas y rutas</a></li>
-                    <li><a href="pages/reservas.html">Reservar bicicleta</a></li>
-                    <li><a class="activo" href="index.html">Pagina actual</a></li>
-                </ul>
-                <nav>
-                    <ul id="menu2">
-                        <a href="#quienes-somos">¿Quienes somos?</a>
-                        <a href="#nuestros-servicios">Nuestros servicios</a>
-                        <a href="#como-alquilar">Como alquilar</a>
-
-                    </ul>
-                </nav>
-            </nav>
-
         </div>
-
-
 
     </header>
 
@@ -88,38 +89,49 @@
                 <p>Ademas incluimos el servicio de Tour guiado, este servicio incluye un viaje guiado por el lugar que
                     elijas</p>
             </article>
-            <section class="rutas">
+            <section class="container mb-3">
                 <h2>Nuestras rutas</h2>
-                <div class="rutas-container">
-                    <article class="tarjeta">
-                        <h3>Rio y parques</h3>
-                        <img src="img/rio-parques.png" alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
-                        <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
-                    </article>
-                    <article class="tarjeta">
-                        <h3>Sabores de barrio</h3>
-                        <img src="img/sabores-barrio.png" alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
-                        <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
-                    </article>
-                    <article class="tarjeta">
-                        <h3>Reto las Palmas</h3>
-                        <img src="img/reto-palmas.png" alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
-                        <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
-                    </article>
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <article class="tarjeta card p-4 h-100">
+                            <div class="card-body">
+                                <h3>Rio y <br> parques</h3>
+                                <img class="card-img" src="img/rio-parques.png"
+                                    alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
+                                <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <article class="tarjeta card p-4 h-100">
+                            <div class="card-body">
+                                <h3>Sabores de barrio</h3>
+                                <img class="card-img" src="img/sabores-barrio.png"
+                                    alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
+                                <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <article class="tarjeta card p-4 h-100">
+                            <div class="card-body">
+                                <h3>Reto <br> las Palmas</h3>
+                                <img class="card-img" src="img/reto-palmas.png"
+                                    alt="Ruta de nuestro tour, la imagen es solo decorativa"><br>
+                                <a href="pages/tarifas.html#ruta">Tarifa de rutas</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-
-
+                <p><a href="pages/tarifas.html">Accede a nuestras tarifas</a></p>
             </section>
 
-
-
-            <p><a href="pages/tarifas.html">Accede a nuestras tarifas</a></p>
         </section>
         <section class="container mb-5">
             <h2>Nuestra flota</h2>
             <div class="row g-3">
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <article class="card p-4 h-100">
+                    <article class="tarjeta card p-4 h-100">
                         <div class="card-body">
                             <h3>Urbana Clasica</h3>
                             <img class="card-img" src="img/bicicleta-clasica.png" alt="Bicicleta urbana clásica">
@@ -133,7 +145,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <article class="card p-4 h-100">
+                    <article class="tarjeta card p-4 h-100">
                         <div class="card-body">
                             <h3>Urbana Plegable</h3>
                             <img class="card-img" src="img/bicicleta-pegable.jpg" alt="Bicicleta urbana plegable">
@@ -147,7 +159,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <article class="card p-4 h-100">
+                    <article class="tarjeta card p-4 h-100">
                         <div class="card-body">
                             <h3>Montaña Trail</h3>
                             <img class="card-img" src="img/montaña-trail.jpg" alt="Bicicleta de montaña Trail">
@@ -161,7 +173,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <article class="card p-4 h-100">
+                    <article class="tarjeta card p-4 h-100">
                         <div class="card-body">
                             <h3>Gravel Aventura</h3>
                             <img class="card-img" src="img/gravel-aventura.jpg" alt="Bicicleta gravel Aventura">
@@ -175,7 +187,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <article class="card p-4 h-100">
+                    <article class="tarjeta card p-4 h-100">
                         <div class="card-body">
                             <h3>Electrica Urbana</h3>
                             <img class="card-img" src="img/electrica-urbana.jpg" alt="Bicicleta eléctrica urbana">
@@ -189,7 +201,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <article class="card p-4 h-100">
+                    <article class="tarjeta card p-4 h-100">
                         <div class="card-body">
                             <h3>Infantil</h3>
                             <img class="card-img" src="img/infantil.jpg" alt="Bicicleta infantil">
@@ -203,7 +215,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <article class="card p-4 h-100">
+                    <article class="tarjeta card p-4 h-100">
                         <div class="card-body">
                             <h3>Tandem</h3>
                             <img class="card-img" src="img/tandem.png" alt="Bicicleta tándem">
@@ -235,25 +247,25 @@
 
         <section class="container mt-5">
             <h2 class="text-center">¿Por que Rueda Libre?</h2>
-            <div class="row g-4 py-4 gap-5">
-                <div class="col-lg-4 border" style="width: 310px;">
+            <div class="row g-4 mt-3 gap-5">
+                <div class="col-lg-4 border rounded p-3" style="width: 310px;">
                     <h3 class="text-success">Nuestras bicicletas</h3>
                     <p>bicicletas revisadas en cada alquiler, casco y candado incluidos, guías certificados y puntos de
                         devolución en tres sedes</p>
                 </div>
-                <div class="col-lg-4 border" style="width: 310px;">
+                <div class="col-lg-4 border rounded p-3" style="width: 310px;">
                     <h3 class="text-success">Objetos</h3>
                     <p class="fw-bold">Casco y candado incluidos</p>
                 </div>
-                <div class="col-lg-4 border" style="width: 310px;">
+                <div class="col-lg-4 border rounded p-3" style="width: 310px;">
                     <h3 class="text-success">Guias</h3>
                     <p>Guías certificados y puntos de devolución en tres sedes</p>
                 </div>
 
             </div>
         </section>
-        <section class="container d-md-flex">
-            <div class="row ">
+        <section class="container d-md-flex gap-3">
+            <div class="row">
                 <p>¿Listo para rodar?</p>
             </div>
             <div>
