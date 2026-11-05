@@ -41,6 +41,9 @@ footer {
     gap: 1rem;
     flex-wrap: wrap;
 }
+footer a{
+    transform: translateY(-7px);
+}
 
 header {
     background: linear-gradient(135deg, var(--azul), #1F3A6B);
@@ -50,7 +53,6 @@ header {
 header a:hover {
     color: var(--crema);
     background-color: var(--naranja);
-    text-decoration: underline;
 }
 
 
@@ -80,15 +82,13 @@ main {
 }
 
 #menu {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 20px;
-    padding: 8px;
     background-color: var(--crema);
-    border-radius: 5px;
+    list-style: none;
 }
 
 #menu a {
+    padding: 5px;
+    border-radius: 5px;
     text-align: center;
     justify-content: center;
     color: var(--azul);
@@ -96,8 +96,7 @@ main {
 
 #menu a:hover {
     color: var(--crema);
-    background-color: var(--naranja);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #menu a:focus {
@@ -107,8 +106,11 @@ main {
     outline-offset: 2px;
 }
 
+
 #menu2 a {
     color: var(--crema);
+    text-decoration: none;
+    list-style: none;
 }
 
 .activo {
