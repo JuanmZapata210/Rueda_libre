@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
+
 <body>
     <header class="container-fluid">
         <div class="container" style="max-width: 1100px;">
@@ -25,7 +26,7 @@
                     <h1>Reserva tu bicicleta</h1>
                     <img class="portada mb-2" src="../img/portada.jpg"
                         alt="Portada alquiler de bicicletas, la imagen es solo decorativa">
-                    <p>Reserva qui tu bicicleta</p>
+                    <p>Reserva aqui tu bicicleta</p>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-6 d-flex flex-column justify-content-center ">
                     <h2 class="text-center">Menu</h2>
@@ -40,7 +41,8 @@
                             <div class="collapse navbar-collapse px-5" id="navbarNav">
                                 <ul class="navbar-nav gap-2">
                                     <li class="nav-item">
-                                        <a class="nav-link active fw-bold" aria-current="page" href="reservas.html">Reservar</a>
+                                        <a class="nav-link active fw-bold" aria-current="page"
+                                            href="reservas.html">Reservar</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link " href="tarifas.html">Tarifas</a>
@@ -58,38 +60,57 @@
         </div>
     </header>
     <main>
+        <section class="alert alert-info alert-dismissible mb-5">
+            <strong>Aviso: </strong>Recuerda traer el documento
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </section>
+
         <section class="container mb-5">
             <h2 class="text-center mb-5">Formulario de reserva</h2>
             <div class="row ">
-                <form class="row gap-3 d-flex justify-content-center" action="../index.html" method="post">
+                <form class="needs-validation row gap-3 d-flex justify-content-center" action="../index.html"
+                    method="post" novalidate>
                     <div class="col-md-3">
                         <fieldset class="border rounded p-3">
                             <legend>Tus datos</legend>
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label mb-2" for="nombre">Nombre completo:</label>
                                 <input class="form-control" type="text" id="nombre" name="nombre" autocomplete="name"
                                     required minlength="3">
-                            </p>
-                            <p>
+                                <div class="invalid-feedback text-danger">
+                                    Por favor, escribe un nombre válido.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
                                 <label class="form-label mb-2" for="documento">Numero de documento</label>
                                 <input class="form-control" type="text" id="documento" name="documento"
                                     inputmode="numeric" required pattern="[0-9]{6,10}"
                                     title="Solo numeros entre 6 y 10 digitos">
+                                <div class="invalid-feedback text-danger">
+                                    El numero de documento debe tener minimo 6 numeros y maximo 10
+                                </div>
 
-                            </p>
+                            </div>
 
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label mb-2" for="correo">Correo electronico</label>
                                 <input class="form-control" type="email" id="correo" name="correo" autocomplete="email"
                                     required pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                                     title="Escribe un correo valido. Ejemplo: nombre@correo.com">
-                            </p>
+                                <div class="invalid-feedback text-danger">
+                                    Escribe un correo valido. Ejemplo: nombre@correo.com
+                                </div>
+                            </div>
 
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label mb-2" for="celular">Celular</label>
                                 <input class="form-control" type="tel" id="celular" name="celular" autocomplete="tel"
                                     required pattern="3[0-9]{9}" title="Debe empezar por 3 y contener 10 numeros">
-                            </p>
+                                <div class="invalid-feedback text-danger">
+                                    Debe empezar por 3 y contener 10 numeros
+                                </div>
+                            </div>
 
                         </fieldset>
 
@@ -100,13 +121,13 @@
                         <fieldset>
                             <legend>Tu alquiler</legend>
 
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label" for="fecha">Fecha del alquiler</label>
                                 <input class="form-control" type="date" id="fecha" name="fecha" required
                                     min="2026-11-01" max="2026-12-31">
-                            </p>
+                            </div>
 
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label" for="tipo">Tipo de bicicleta</label>
                                 <select class="form-select" id="tipo" name="tipo_bicicleta" required>
                                     <option value="">Selecciona una opcion</option>
@@ -114,34 +135,34 @@
                                     <option value="montana">Montaña</option>
                                     <option value="electrica">Electrica</option>
                                 </select>
-                            </p>
+                            </div>
 
                             <fieldset>
                                 <legend>Plan</legend>
-                                <p>
+                                <div class="mb-3">
                                     <input class="form-check-input" type="radio" id="plan-hora" name="plan"
                                         value="1-hora" required>
                                     <label class="form-check-label" for="plan-hora">1 hora</label>
-                                </p>
-                                <p>
+                                </div>
+                                <div class="mb-3">
                                     <input class="form-check-input" type="radio" id="plan-medio" name="plan"
                                         value="medio-dia" required>
                                     <label class="form-check-label" for="plan-medio">Medio dia (4h)</label>
-                                </p>
-                                <p>
+                                </div>
+                                <div class="mb-3">
                                     <input class="form-check-input" type="radio" id="plan-dia" name="plan"
                                         value="dia-completo" required>
                                     <label class="form-check-label" for="plan-dia">Dia completo</label>
-                                </p>
+                                </div>
                             </fieldset>
 
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label" for="cantidad">Cantidad de bicicletas</label>
                                 <input class="form-control" type="number" id="cantidad" name="cantidad" value="1"
                                     min="1" max="6">
-                            </p>
+                            </div>
 
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label" for="recorrido">Recorrido guiado</label>
                                 <select class="form-select" id="recorrido" name="recorrido">
                                     <option value="ninguno">Ninguno</option>
@@ -149,24 +170,62 @@
                                     <option value="sabores-de-barrio">Sabores de Barrio</option>
                                     <option value="reto-las-palmas">Reto Las Palmas</option>
                                 </select>
-                            </p>
+                            </div>
                         </fieldset>
 
                         <fieldset>
                             <legend>Confirmación</legend>
 
-                            <p>
+                            <div class="mb-3">
                                 <label class="form-label" for="comentarios">Comentarios</label><br>
                                 <textarea class="form-control" id="comentarios" name="comentarios" rows="4" cols="40"
                                     maxlength="300"></textarea>
-                            </p>
+                            </div>
 
-                            <p>
+
+                            <div class="mb-3 d-flex gap-3">
                                 <input class="form-check-input" type="checkbox" id="politicas" name="politicas"
                                     value="aceptadas" required>
                                 <label class="form-check-label" for="politicas">Acepto las politicas de alquiler</label>
-                            </p>
+                                <div class="">
+                                    <!-- El href hace la función de apuntar al ID (#miModal) -->
+                                    <a href="#miPrimerModal" class="link-primary" data-bs-toggle="modal">
+                                        Politicas de alquiler
+                                    </a>
+
+
+
+                                </div>
+                            </div>
                         </fieldset>
+
+                        <div class="modal fade" id="miPrimerModal" tabindex="-1" aria-labelledby="modalTitulo"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalTitulo">Politicas de alquiler</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ol>
+                                            <li>Presenta tu documento de identidad original al recoger la bicicleta.</li>
+                                            <li>Revisa la bicicleta con el asesor antes de salir.</li>
+                                            <li>Cada 15 minutos de retraso en la devolución tienen un recargo de $5.000.</li>
+                                            <li>Los daños por mal uso se cobran según el costo de la reparación.</li>
+                                            <li>Los menores de edad deben estar acompañados por un adulto responsable.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="btn-reserva mb-5">
                             <button class="btn btn-success" type="submit">Enviar reserva</button>
                         </div>
@@ -200,6 +259,27 @@
         <a href="mailto:correo.hola@ruedalibre.example">Escribenos a nuestro correo electronico</a>
         <p><strong>2026</strong></p>
     </footer>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 
 </body>
 
