@@ -48,9 +48,11 @@ footer a{
 header {
     background: linear-gradient(135deg, var(--azul), #1F3A6B);
     border-bottom: 4px solid var(--naranja);
+    margin: auto;
 }
 
 header a:hover {
+
     color: var(--crema);
     background-color: var(--naranja);
 }
@@ -175,7 +177,26 @@ td {
     gap: 70px 50px;
 }
 
+@media (min-width: 400px) and (max-width:576px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .port{
+        display: flex;
+        justify-content: space-between;
+    }
 
+    img {
+        display: block;
+        width: 300px;
+        height: 200px;
+        min-width: 0;
+    }
+}
 
 @media (min-width: 360px) {
     .header {
