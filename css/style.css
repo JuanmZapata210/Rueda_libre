@@ -145,7 +145,7 @@ main {
 .table-responsive,
 th,
 td {
-    padding: 12px;
+    padding: 2px;
     border: 1px solid black;
 }
 
