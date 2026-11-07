@@ -142,9 +142,10 @@ main {
 .tarjeta:hover {
     outline: 5px solid var(--blanco);
 }
-table,
+.table-responsive,
 th,
 td {
+    padding: 12px;
     border: 1px solid black;
 }
 
