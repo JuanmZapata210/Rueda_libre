@@ -162,3 +162,14 @@ Registra en la bitácora cinco clases que encontraste buscando en la documentaci
 -Gap-* para dar espacio horizontalmente
 -Fw-bold Para poner el texto en negrilla
 -Fs-* para agrandar el tamaño de la letra
+
+
+Semana 3
+Clases en output.css
+
+Busque bg-indigo-500 en output.css y si esta, con su regla CSS Busque bg-pink-500 y no existe.
+
+Por que: la CLI escanea los archivos del proyecto, detecta los nombres de
+clase que aparecen escritos y genera solo el CSS de esas clases. Si una clase
+no esta en ningún archivo, no se genera. Por eso output.css queda liviano,
+a diferencia del Play CDN, que genera el CSS en el navegador.
