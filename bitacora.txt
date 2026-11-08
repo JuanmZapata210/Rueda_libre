@@ -173,3 +173,21 @@ Por que: la CLI escanea los archivos del proyecto, detecta los nombres de
 clase que aparecen escritos y genera solo el CSS de esas clases. Si una clase
 no esta en ningún archivo, no se genera. Por eso output.css queda liviano,
 a diferencia del Play CDN, que genera el CSS en el navegador.
+
+
+Reglas del kit
+
+Radios de borde
+- Controles (botones, inputs, etiquetas de nivel): `rounded`
+- Contenedores (cards, alertas): `rounded-lg`
+
+Escala de espaciado (solo estos valores)
+- 1, 2, 3, 4, 6 (p-3, p-4, p-6, mb-2, mb-4, gap-4)
+
+Colores
+- Principal: indigo (indigo-500, hover indigo-400, foco indigo-300)
+- Neutros: slate (slate-900 fondo, slate-700 secundario, slate-500 texto de apoyo)
+- Alertas: azul (informacion), verde (exito), amarillo (advertencia),
+siempre con fondo -100, borde -500 y texto -900
+
+Foco: todos los elementos interactivos usan focus:outline-none mas focus:ring-4.
