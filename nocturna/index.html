@@ -10,10 +10,10 @@
 
 <body class="bg-slate-900 text-white">
     <header class="border-b border-white">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col items-center gap-4 md:flex-row md:justify-between">
             <a href="#inicio" class="text-2xl font-bold">Rueda Nocturna</a>
 
-            <nav class="flex gap-6">
+            <nav class="md:flex gap-6">
                 <a href="#rutas" class="text-slate-300 hover:text-white">Rutas</a>
                 <a href="#como-funciona" class="text-slate-300 hover:text-white">¿Cómo funciona?</a>
                 <a href="#inscripcion" class="text-slate-300 hover:text-white">Inscripción</a>
@@ -28,7 +28,7 @@
 
     <main>
         <section id="inicio">
-            <div class="max-w-6xl mx-auto px-6 py-6">
+            <div class="max-w-6xl mx-auto px-6 py-6 md:py-12 lg:py-16">
                 <p class="text-indigo-400 mb-4">Nuevo · Jueves a sábado</p>
                 <h1 class="text-5xl font-bold text-white mb-6">Rueda Nocturna</h1>
                 <p class="text-white mb-6">
@@ -48,7 +48,7 @@
             <div class="max-w-6xl mx-auto px-6 py-6">
                 <h2 class="text-3xl font-bold mb-6">Rutas</h2>
 
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
                     <article class="bg-white text-slate-900 border border-slate-200 rounded-lg shadow hover:shadow-xl overflow-hidden">
                         <img src="../img/luces-centro.jpg" alt="Ciclistas recorriendo el centro de Medellín de noche"
@@ -149,8 +149,7 @@
         <section id="como-funciona">
             <div class="max-w-6xl mx-auto px-6 py-6">
                 <h2 class="text-3xl font-bold mb-6">¿Cómo funciona?</h2>
-
-                <div class="grid grid-cols-4 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div>
                         <p class="text-3xl font-bold text-indigo-400 mb-2">1</p>
                         <h3 class="text-xl font-bold mb-2">Elige tu ruta</h3>
@@ -175,7 +174,7 @@
             </div>
         </section>
         <section id="inscripcion">
-            <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
                 <div>
                     <h2 class="text-3xl font-bold mb-2">¿Listo para rodar de noche?</h2>
                     <p class="text-slate-300">Reserva tu cupo para esta semana.</p>
@@ -190,7 +189,7 @@
 
     </main>
     <footer class="border-t border-slate-700">
-        <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between">
+        <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-6 md:flex-row md:justify-between">
             <div>
                 <p class="font-bold mb-2">Rueda Nocturna</p>
                 <p class="text-slate-300">Medellín en bici cuando se encienden las luces.</p>

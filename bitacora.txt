@@ -203,3 +203,19 @@ y grid los reparte en columnas del mismo ancho.
 
 Flex: lo Use en el encabezado, la franja y el pie, porque son filas con
 pocos elementos que solo necesito separar y centrar use tambien justify-between y items-center.
+
+Problemas a 360 px antes de ser respondive
+
+- Las rutas en grid-cols-3 y los pasos en grid-cols-4` quedaban en columnas
+- muy angostas, con el texto apretado.
+- El encabezado en una sola fila no cabia: logo, tres enlaces y botón.
+- La franja y el pie, con flex en fila, quedaban apretados.
+
+Pruebas por ancho
+
+| Ancho   | Encabezado               | Rutas      | Pasos      | Scroll horizontal |
+|---------|--------------------------|------------|------------|-------------------|
+| 360 px  | Apilado, solo el botón   | 1 columna  | 1 columna  | No                |
+| 768 px  | Fila con enlaces         | 2 columnas | 2 columnas | No                |
+| 1024 px | Fila con enlaces         | 3 columnas | 4 columnas | No                |
+| 1280 px | Fila con enlaces         | 3 columnas | 4 columnas | No                |
