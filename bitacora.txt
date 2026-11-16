@@ -191,3 +191,15 @@ Colores
 siempre con fondo -100, borde -500 y texto -900
 
 Foco: todos los elementos interactivos usan focus:outline-none mas focus:ring-4.
+
+Layout de la landing
+
+Rutas con grid: use grid grid-cols-3 porque son tarjetas del mismo tamaño
+en columnas iguales, y grid mantiene el mismo ancho y alto en las tres sin
+depender del contenido.
+
+Pasos con grid: use grid grid-cols-4 porque son cuatro bloques iguales
+y grid los reparte en columnas del mismo ancho.
+
+Flex: lo Use en el encabezado, la franja y el pie, porque son filas con
+pocos elementos que solo necesito separar y centrar use tambien justify-between y items-center.
