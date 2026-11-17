@@ -1,0 +1,249 @@
+﻿url: http://127.0.0.1:3000/index.html
+protocolo: http
+host: 127.0.0.1:3000
+puerto: 3000
+ruta: /index.html
+metodo de peticion: GET
+codigo de estado: 200 OK
+
+
+Al buscar promociones/html
+File not found
+
+
+The file "/home/cohorte8/JuanZapata/rueda-libre/index.html/promociones. html" cannot be found. It may have been moved, edited, or deleted.
+ 
+- Esto pasa porque se intenta buscar una ruta que aun no esta creada en el proyecto por lo cual el sistema rechaza la peticion y suelta el error 
+
+
+
+
+Roles en rueda-libre
+- HTML: Es el esqueleto del sitio, es como la estructura ahi se define lo que tiene la pagina.
+Ejemplo: Un catalogo con las biclicetas, ejemplo bicileta de montaña, esta seria una vista del catalogo
+- CSS: Es donde se definen los estilos y como se ve la pagina.
+Ejemplo: Cambiar el fono, el tipo de letra, el tamaño etc.
+- JavaScript: con JavaScript se haran todas las interacciones
+Ejemplo: Crear un boton que sea agregar carrito, algun filtro para buscar bicis por su cuenta
+
+
+Tabla de rutas
+
+
+Archivo origen
+	destino
+	ruta
+	index.html
+	tarifas
+	/pages/tarifas.html
+
+
+	index.html
+	reservas
+	/pages/reservas.html
+
+
+	index.html
+	google maps
+	https://www.google.com/maps
+
+
+	index.html
+	correo electroniuco
+	mailto:correo.hola@ruedalibre.example
+
+
+	tarifas.html
+	index
+	../index.html
+	tarifas.html
+	reservas
+	reservas.html
+	reservas.html
+	inicio
+	../index.html
+	reservas.html 
+	tarifas
+	tarifas.html
+
+Reto dia 2
+
+Esquema de region Index.html
+Encabezado (header): imagen de portada, el h1, bienvenida
+	(nav): enlaces a tarifas y reservas
+Contenido principal (main)
+	Sección: ¿Quiénes somos? 
+	Sección: Nuestros servicios 
+		Artículo: Tipo de bicicleta 
+		Artículo: Alquiler por horas 
+		Artículo: Alquiler por día completo 
+		Artículo: Tour guiado 
+		Artículo: Rutas 
+	Sección: ¿Cómo alquilar? 
+	Sección: Beneficios de alquilar con nosotros 
+Contenido complementario (aside): enlaces de interés 
+Pie de página (footer): nombre del negocio, correo de contacto y año 
+
+Esquema de region tarifas.html
+Encabezado (header): h1, imagen, frase introductoria
+	(nav): enlaces a inicio y reservas
+Contenido principal (main)
+	Sección: Tarifas de alquiler (con su tabla)
+	Sección: Tarifa recorridos guiados (con su tabla y enlace para reservar)
+	Sección: Información adicional
+		Contenido complementario (aside): Recuerda llevar
+Pie de página (footer): nombre del negocio, correo de contacto, año y enlace para volver al inicio.
+
+Esquema de region reservas.html
+Encabezado (header): h1
+	(nav): enlaces a inicio y tarifas
+Contenido principal (main)
+	Sección: Correo de contacto
+	Contenido complementario (aside): Horario de atención
+Pie de página (footer): nombre del negocio, correo de contacto y año
+
+
+Segunda parte:
+- Se uso el type:Radio para seleccionar el plan que el usuario queria porque asi se aseguraba que solo se eligira una opcion.
+- Se uso un select para la seleccion del tipo de bicicleta y para seleccionar el recorrido guiado porque son listas cortas de opciones fijas. El select ocupa poco espacio, obliga a escoger un valor válido y evita los errores que a veces se tienen en escritura.
+- Se uso type="text" con inputmode="numeric" para el numero de documento porque type="number" muestra flechas de subir y bajar, y puede borrar los ceros iniciales.
+
+Tercera parte
+Verificacion 
+- nombre: ja - Suelta error debe contener mas de 3 letras
+- documento: 101 - suelta error debe tener entre 6 y 10 numeros
+- documento: 10101010101101 - suelta error debe tener entre 6 y 10 numeros
+- correo electroniuco: jaja@gmail - suelta error debe tener el .com
+- fecha alquiler: solo acepta del 1 de noviembre a el 31 de diciembre
+- cantidad de bicicletas: solo se deja poner entre 1 y 6 
+- celular: 219456876 - suelta error debe empezar por 3
+- celular: 319876 - Suelta erro debe contener 10 numeros
+- comentarios: solo acepta 300 caracteres
+- Acepto politicas de privacidad: si no esta marcado no se manda el formulario
+
+Cuarta parte
+Hallzagos 
+- Las tres paginas estaban en <html lang="en"> quiere decir en ingles, deben estar en es, en español.
+- Tenia varios alt muy pobres y sin describir si la imagen es solo decorativa.
+- Cambie <a href="/pages/reservas.html">Aqui puedes reservar</a> mas especificamente cambie aqui puedes reservar porque sin contexto no se entiende y le puse reservar bicicleta.
+- Cambie la descripcion del enlace del correo electronico porque no se entendia a donde iba, la cambie por escribenos a nuestro correo electronico.
+- Correcion en un h2 que pasaba de una a h4 sin usar el h3.
+
+
+Contraste de colores
+-Blanco sobre Verde Ruta: 5.31:1 - Apta para texto normal
+-Blanco sobre Naranja Pedal: 2.22:1 - No apta
+-Azul Noche sobre Naranja Pedal: 7.20:1	- Apta para texto normal.
+-Azul Noche sobre Crema: 14.83:1 - Apta para texto normal
+-Gris Asfalto sobre Crema: 5.57:1 - Apta para texto normal
+-Verde Ruta sobre Crema:	4.93:1 - Apta para texto normal
+-Naranja Pedal sobre Crema: 2.06:1 -	No apta
+-Blanco sobre Azul Noche: 15.97:1 - Apta para texto normal
+
+Ninguna quedo en texto grande que seria entre 3 y 4.5
+
+
+SEMANA 2
+Dia1
+Estrecha poco a poco la ventana del navegador y describe en la bitácora qué ocurre con el encabezado y el pie.
+-Al tener flex-wrap: wrap; lo que pasa es que el cointenido al no caber mas en la fila se va desplazando para abajo y asi con todos para que pueda verse bien en dispositivos mas pequeños
+
+Registra en la bitácora, para cada caso (portada, galería, reservas, fila del formulario, encabezado y pie),
+-Use display: grid; grid-template-columns: repeat(3, 1fr); para las imaganes de las rutas y las bicicletas para que quedaran de a 3 como maximo
+-En el HEADER Y FOOTER use display flex para que me quedaran horizontalmente.
+
+Dia2
+Registra en la bitácora: tiempo invertido, líneas de CSS de distribución de la flota en tu versión propia frente a clases usadas ahora, qué te dio Bootstrap sin esfuerzo y qué control perdiste.
+-Inverti mucho tiempo ya que no entendia como funcionaba boostrap, me toco mirar bien como funcionaba cada cosa yu ver como lo usaba 
+
+Registra en la bitácora cinco clases que encontraste buscando en la documentación y qué hace cada una
+-d-flex es el display flex
+-Col-* es para ver como se va separar la pantalla depende el tamaño, muy util para hacerla responsive
+-Gap-* para dar espacio horizontalmente
+-Fw-bold Para poner el texto en negrilla
+-Fs-* para agrandar el tamaño de la letra
+
+
+Semana 3
+Clases en output.css
+
+Busque bg-indigo-500 en output.css y si esta, con su regla CSS Busque bg-pink-500 y no existe.
+
+Por que: la CLI escanea los archivos del proyecto, detecta los nombres de
+clase que aparecen escritos y genera solo el CSS de esas clases. Si una clase
+no esta en ningún archivo, no se genera. Por eso output.css queda liviano,
+a diferencia del Play CDN, que genera el CSS en el navegador.
+
+
+Reglas del kit
+
+Radios de borde
+- Controles (botones, inputs, etiquetas de nivel): `rounded`
+- Contenedores (cards, alertas): `rounded-lg`
+
+Escala de espaciado (solo estos valores)
+- 1, 2, 3, 4, 6 (p-3, p-4, p-6, mb-2, mb-4, gap-4)
+
+Colores
+- Principal: indigo (indigo-500, hover indigo-400, foco indigo-300)
+- Neutros: slate (slate-900 fondo, slate-700 secundario, slate-500 texto de apoyo)
+- Alertas: azul (informacion), verde (exito), amarillo (advertencia),
+siempre con fondo -100, borde -500 y texto -900
+
+Foco: todos los elementos interactivos usan focus:outline-none mas focus:ring-4.
+
+Layout de la landing
+
+Rutas con grid: use grid grid-cols-3 porque son tarjetas del mismo tamaño
+en columnas iguales, y grid mantiene el mismo ancho y alto en las tres sin
+depender del contenido.
+
+Pasos con grid: use grid grid-cols-4 porque son cuatro bloques iguales
+y grid los reparte en columnas del mismo ancho.
+
+Flex: lo Use en el encabezado, la franja y el pie, porque son filas con
+pocos elementos que solo necesito separar y centrar use tambien justify-between y items-center.
+
+Problemas a 360 px antes de ser respondive
+
+- Las rutas en grid-cols-3 y los pasos en grid-cols-4` quedaban en columnas
+- muy angostas, con el texto apretado.
+- El encabezado en una sola fila no cabia: logo, tres enlaces y botón.
+- La franja y el pie, con flex en fila, quedaban apretados.
+
+Pruebas por ancho
+
+| Ancho   | Encabezado               | Rutas      | Pasos      | Scroll horizontal |
+|---------|--------------------------|------------|------------|-------------------|
+| 360 px  | Apilado, solo el botón   | 1 columna  | 1 columna  | No                |
+| 768 px  | Fila con enlaces         | 2 columnas | 2 columnas | No                |
+| 1024 px | Fila con enlaces         | 3 columnas | 4 columnas | No                |
+| 1280 px | Fila con enlaces         | 3 columnas | 4 columnas | No                |
+
+Refactor con @apply
+
+- Clases que mas se repetian en la landing: boton principal (6 veces, 14 clases),
+  card (3 veces), dt (9 veces), texto secundario (8 veces) y enlaces del menu (5 veces).
+- Cree 3 clases con @apply: btn-principal, btn-secundario y btn-contorno.
+- Las cards no las converti en clase. Deje el mismo marcado en las tres, porque
+  cambian los datos y no el estilo.
+- Ordene las clases asi: layout, espaciado, tipografia, color y bordes, y estados.
+
+Comparativa Bootstrap vs Tailwind
+
+| Criterio             | Bootstrap                                                      | Tailwind                                                              |
+|----------------------|----------------------------------------------------------------|-----------------------------------------------------------------------|
+| Curva de aprendizaje | Mas facil. El boton de la semana 2 salio con `btn btn-primary`. | Mas dificil al inicio. Hay que aprender las clases. El boton tenia 14. |
+| Personalizacion      | Toca cambiar estilos que ya vienen hechos.                     | Con `@theme` puse mis 6 colores y 2 fuentes. Con `dark:` hice el modo oscuro. |
+| Casos de uso         | Paginas rapidas y sitios con cosas de JS ya hechas (modales).  | Sitios con diseno propio.                                             |
+
+Recomendacion para Rueda Libre
+
+Recomiendo Tailwind para la proxima version. Rueda Libre tiene sus colores y sus
+dos fuentes, y con @theme quedaron en un solo lugar. Ademas el modo oscuro y el
+responsive los hice solo con prefijos, sin escribir CSS aparte. En mis mediciones,
+
+Lo malo: el HTML queda mas largo y se necesita la CLI (el CSS generado se sube al
+repositorio). Lo controle con @apply solo en los botones y repitiendo el mismo
+marcado en las cards. Si el sitio necesitara muchas cosas de JS ya hechas
+(modales, carruseles), Bootstrap tambien seria buena opcion.
