@@ -15,14 +15,16 @@
 <body class="font-cuerpo bg-crema text-azul-noche dark:bg-azul-noche dark:text-crema">
     <header class="border-b border-gris-asfalto">
         <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col items-center gap-4 md:flex-row md:justify-between">
-            <a href="#inicio" class="text-2xl font-bold font-titulos">Rueda Nocturna</a>
-
+            <a href="../index.html" class="text-2xl font-bold font-titulos">Rueda Libre</a>
             <nav class="hidden md:flex gap-6">
-                <a href="#rutas" class="text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">Rutas</a>
-                <a href="#como-funciona" class="text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">¿Cómo funciona?</a>
-                <a href="#inscripcion" class="text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">Inscripción</a>
+                <a href="#rutas"
+                    class="text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">Rutas</a>
+                <a href="#como-funciona"
+                    class="text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">¿Cómo
+                    funciona?</a>
+                <a href="#inscripcion"
+                    class="text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">Inscripción</a>
             </nav>
-
             <a href="#inscripcion"
                 class="px-6 py-3 rounded font-bold bg-verde-ruta text-crema hover:bg-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-azul-noche dark:focus:ring-crema">
                 Inscríbete
@@ -81,8 +83,7 @@
 
                             <p class="text-3xl font-bold text-verde-ruta dark:text-amarillo-farol mb-4">$55.000</p>
 
-                            <button type="button"
-                                class="w-full px-6 py-3 rounded font-bold bg-verde-ruta text-crema hover:bg-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-azul-noche dark:focus:ring-crema">
+                            <button type="button" class="btn-principal w-full">
                                 Inscríbete
                             </button>
                         </div>
@@ -115,8 +116,7 @@
 
                             <p class="text-3xl font-bold text-verde-ruta dark:text-amarillo-farol mb-4">$75.000</p>
 
-                            <button type="button"
-                                class="w-full px-6 py-3 rounded font-bold bg-verde-ruta text-crema hover:bg-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-azul-noche dark:focus:ring-crema">
+                            <button type="button" class="btn-principal w-full">
                                 Inscríbete
                             </button>
                         </div>
@@ -149,8 +149,7 @@
 
                             <p class="text-3xl font-bold text-verde-ruta dark:text-amarillo-farol mb-4">$95.000</p>
 
-                            <button type="button"
-                                class="w-full px-6 py-3 rounded font-bold bg-verde-ruta text-crema hover:bg-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-azul-noche dark:focus:ring-crema">
+                            <button type="button" class="btn-principal w-full">
                                 Inscríbete
                             </button>
                         </div>
@@ -186,17 +185,187 @@
                 </div>
             </div>
         </section>
-        <section id="inscripcion">
-            <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
-                <div>
-                    <h2 class="text-2xl lg:text-3xl font-bold mb-2 font-titulos">¿Listo para rodar de noche?</h2>
-                    <p>Reserva tu cupo para esta semana.</p>
-                </div>
+        <section id="planes">
+            <div class="mx-auto max-w-6xl px-6 py-6 md:py-12 lg:py-16">
+                <h2 class="mb-6 text-2xl font-bold font-titulos lg:text-3xl">Planes Rueda Nocturna</h2>
 
-                <a href="#inscripcion"
-                    class="px-6 py-3 rounded font-bold text-center bg-verde-ruta text-crema hover:bg-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-crema dark:focus:ring-crema">
-                    Inscríbete
-                </a>
+                <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3">
+                    <article
+                        class="flex flex-col rounded-lg border-2 border-gris-asfalto bg-white p-6 text-azul-noche shadow dark:bg-azul-noche dark:text-crema">
+                        <h3 class="mb-2 text-2xl font-bold font-titulos">Individual</h3>
+                        <p class="text-3xl font-bold text-verde-ruta dark:text-amarillo-farol">$55.000</p>
+                        <p class="mb-4 text-sm text-gris-asfalto dark:text-crema">por persona</p>
+
+                        <ul class="mb-6 flex flex-col gap-2">
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Bicicleta y casco</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Luces LED y chaleco</span>
+                            </li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Guía certificado</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Hidratación</span></li>
+                        </ul>
+
+                        <a href="#inscripcion" class="btn-principal mt-auto w-full text-center">Elegir Individual</a>
+                    </article>
+                    <article
+                        class="flex flex-col rounded-lg border-2 border-amarillo-farol bg-azul-noche p-6 text-crema shadow ring-2 ring-amarillo-farol dark:bg-verde-ruta">
+                        <h3 class="mb-2 text-2xl font-bold font-titulos">Pareja</h3>
+                        <p class="text-3xl font-bold text-amarillo-farol dark:text-crema">$99.000</p>
+                        <p class="mb-4 text-sm text-crema">las dos personas</p>
+
+                        <ul class="mb-6 flex flex-col gap-2">
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Todo lo del plan
+                                    Individual</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Foto del recorrido</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Snack para dos</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Prioridad en la ruta</span>
+                            </li>
+                        </ul>
+
+                        <a href="#inscripcion" class="btn-principal mt-auto w-full text-center">Elegir Pareja</a>
+                    </article>
+
+                    <article
+                        class="flex flex-col rounded-lg border-2 border-gris-asfalto bg-white p-6 text-azul-noche shadow dark:bg-azul-noche dark:text-crema">
+                        <h3 class="mb-2 text-2xl font-bold font-titulos">Grupo (4 a 8)</h3>
+                        <p class="text-3xl font-bold text-verde-ruta dark:text-amarillo-farol">$45.000</p>
+                        <p class="mb-4 text-sm text-gris-asfalto dark:text-crema">por persona</p>
+
+                        <ul class="mb-6 flex flex-col gap-2">
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Todo lo del plan
+                                    Individual</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Guía exclusivo</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Horario a elección</span></li>
+                            <li class="flex gap-2"><span aria-hidden="true">✓</span><span>Fotos del grupo</span></li>
+                        </ul>
+
+                        <a href="#inscripcion" class="btn-principal mt-auto w-full text-center">Elegir Grupo</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section id="inscripcion">
+            <div class="mx-auto max-w-6xl px-6 py-6 md:py-12 lg:py-16">
+                <h2 class="mb-2 text-2xl font-bold font-titulos lg:text-3xl">Inscríbete a Rueda Nocturna</h2>
+                <p class="mb-6 text-gris-asfalto dark:text-crema">Todos los campos son obligatorios.</p>
+
+                <form action="#" method="get" class="max-w-3xl">
+                    <fieldset class="mb-6">
+                        <legend class="mb-4 text-xl font-bold font-titulos">Tus datos</legend>
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                            <div class="md:col-span-2">
+                                <label for="nombre" class="block mb-2 font-bold">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required minlength="3" autocomplete="name"
+                                    placeholder="Nombre"
+                                    class="w-full rounded border-2 border-gris-asfalto bg-white p-3 text-azul-noche placeholder:text-gris-asfalto focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-azul-noche dark:border-crema dark:bg-azul-noche dark:text-crema dark:placeholder:text-crema/70 dark:focus:ring-crema">
+                                <p class="mt-2 text-sm text-gris-asfalto dark:text-crema">Mínimo 3 caracteres.</p>
+                            </div>
+
+                            <div>
+                                <label for="correo" class="block mb-2 font-bold">Correo electrónico</label>
+                                <input type="email" id="correo" name="correo" required autocomplete="email"
+                                    placeholder="Correo electronico"
+                                    class="w-full rounded border-2 border-gris-asfalto bg-white p-3 text-azul-noche placeholder:text-gris-asfalto focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-azul-noche dark:border-crema dark:bg-azul-noche dark:text-crema dark:placeholder:text-crema/70 dark:focus:ring-crema">
+                                <p class="mt-2 text-sm text-gris-asfalto dark:text-crema">Te enviaremos la confirmación
+                                    aquí.</p>
+                            </div>
+
+                            <div>
+                                <label for="celular" class="block mb-2 font-bold">Celular</label>
+                                <input type="tel" id="celular" name="celular" required inputmode="numeric"
+                                    pattern="3[0-9]{9}" title="10 dígitos, empezando por 3" autocomplete="tel"
+                                    placeholder="Celular"
+                                    class="w-full rounded border-2 border-gris-asfalto bg-white p-3 text-azul-noche placeholder:text-gris-asfalto focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-azul-noche dark:border-crema dark:bg-azul-noche dark:text-crema dark:placeholder:text-crema/70 dark:focus:ring-crema">
+                                <p class="mt-2 text-sm text-gris-asfalto dark:text-crema">10 dígitos, empieza por 3.</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb-6">
+                        <legend class="mb-4 text-xl font-bold font-titulos">Tu salida</legend>
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                            <div>
+                                <label for="ruta" class="block mb-2 font-bold">Ruta</label>
+                                <select id="ruta" name="ruta" required
+                                    class="w-full rounded border-2 border-gris-asfalto bg-white p-3 text-azul-noche focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-azul-noche dark:border-crema dark:bg-azul-noche dark:text-crema dark:focus:ring-crema">
+                                    <option value="">Elige una ruta</option>
+                                    <option value="luces-del-centro">Luces del Centro</option>
+                                    <option value="miradores-de-la-ciudad">Miradores de la Ciudad</option>
+                                    <option value="luna-en-las-palmas">Luna en Las Palmas</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="dia" class="block mb-2 font-bold">Día de salida</label>
+                                <select id="dia" name="dia" required
+                                    class="w-full rounded border-2 border-gris-asfalto bg-white p-3 text-azul-noche focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-azul-noche dark:border-crema dark:bg-azul-noche dark:text-crema dark:focus:ring-crema">
+                                    <option value="">Elige un día</option>
+                                    <option value="jueves">Jueves</option>
+                                    <option value="viernes">Viernes</option>
+                                    <option value="sabado">Sábado</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="acompanantes" class="block mb-2 font-bold">Acompañantes</label>
+                                <input type="number" id="acompanantes" name="acompanantes" required min="0" max="3"
+                                    placeholder="0"
+                                    class="w-full rounded border-2 border-gris-asfalto bg-white p-3 text-azul-noche placeholder:text-gris-asfalto focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-azul-noche dark:border-crema dark:bg-azul-noche dark:text-crema dark:placeholder:text-crema/70 dark:focus:ring-crema">
+                                <p class="mt-2 text-sm text-gris-asfalto dark:text-crema">De 0 a 3 personas.</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb-6">
+                        <legend class="mb-4 text-xl font-bold font-titulos">Tu experiencia</legend>
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                            <fieldset>
+                                <legend class="mb-2 font-bold">Nivel de experiencia</legend>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" id="nivel-principiante" name="nivel" value="principiante"
+                                            required class="h-5 w-5 accent-verde-ruta dark:accent-amarillo-farol">
+                                        <label for="nivel-principiante">Principiante</label>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" id="nivel-intermedio" name="nivel" value="intermedio"
+                                            class="h-5 w-5 accent-verde-ruta dark:accent-amarillo-farol">
+                                        <label for="nivel-intermedio">Intermedio</label>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" id="nivel-avanzado" name="nivel" value="avanzado"
+                                            class="h-5 w-5 accent-verde-ruta dark:accent-amarillo-farol">
+                                        <label for="nivel-avanzado">Avanzado</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend class="mb-2 font-bold">¿Tienes bicicleta propia?</legend>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" id="bici-si" name="bicicleta" value="si" required
+                                            class="h-5 w-5 accent-verde-ruta dark:accent-amarillo-farol">
+                                        <label for="bici-si">Sí</label>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <input type="radio" id="bici-no" name="bicicleta" value="no"
+                                            class="h-5 w-5 accent-verde-ruta dark:accent-amarillo-farol">
+                                        <label for="bici-no">No</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </fieldset>
+
+                    <div class="mb-6 flex items-center gap-2">
+                        <input type="checkbox" id="condiciones" name="condiciones" required
+                            class="h-5 w-5 accent-verde-ruta dark:accent-amarillo-farol">
+                        <label for="condiciones">Acepto las condiciones de la salida</label>
+                    </div>
+
+                    <button type="submit" class="btn-principal">Enviar inscripción</button>
+                </form>
             </div>
         </section>
 
@@ -210,8 +379,11 @@
 
             <div>
                 <p class="font-bold mb-2">Secciones</p>
-                <a href="#rutas" class="block text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol mb-2">Rutas</a>
-                <a href="#como-funciona" class="block text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">¿Cómo funciona?</a>
+                <a href="#rutas"
+                    class="block text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol mb-2">Rutas</a>
+                <a href="#como-funciona"
+                    class="block text-gris-asfalto hover:text-azul-noche dark:text-crema dark:hover:text-amarillo-farol">¿Cómo
+                    funciona?</a>
             </div>
 
             <div>

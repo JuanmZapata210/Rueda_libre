@@ -219,3 +219,31 @@ Pruebas por ancho
 | 768 px  | Fila con enlaces         | 2 columnas | 2 columnas | No                |
 | 1024 px | Fila con enlaces         | 3 columnas | 4 columnas | No                |
 | 1280 px | Fila con enlaces         | 3 columnas | 4 columnas | No                |
+
+Refactor con @apply
+
+- Clases que mas se repetian en la landing: boton principal (6 veces, 14 clases),
+  card (3 veces), dt (9 veces), texto secundario (8 veces) y enlaces del menu (5 veces).
+- Cree 3 clases con @apply: btn-principal, btn-secundario y btn-contorno.
+- Las cards no las converti en clase. Deje el mismo marcado en las tres, porque
+  cambian los datos y no el estilo.
+- Ordene las clases asi: layout, espaciado, tipografia, color y bordes, y estados.
+
+Comparativa Bootstrap vs Tailwind
+
+| Criterio             | Bootstrap                                                      | Tailwind                                                              |
+|----------------------|----------------------------------------------------------------|-----------------------------------------------------------------------|
+| Curva de aprendizaje | Mas facil. El boton de la semana 2 salio con `btn btn-primary`. | Mas dificil al inicio. Hay que aprender las clases. El boton tenia 14. |
+| Personalizacion      | Toca cambiar estilos que ya vienen hechos.                     | Con `@theme` puse mis 6 colores y 2 fuentes. Con `dark:` hice el modo oscuro. |
+| Casos de uso         | Paginas rapidas y sitios con cosas de JS ya hechas (modales).  | Sitios con diseno propio.                                             |
+
+Recomendacion para Rueda Libre
+
+Recomiendo Tailwind para la proxima version. Rueda Libre tiene sus colores y sus
+dos fuentes, y con @theme quedaron en un solo lugar. Ademas el modo oscuro y el
+responsive los hice solo con prefijos, sin escribir CSS aparte. En mis mediciones,
+
+Lo malo: el HTML queda mas largo y se necesita la CLI (el CSS generado se sube al
+repositorio). Lo controle con @apply solo en los botones y repitiendo el mismo
+marcado en las cards. Si el sitio necesitara muchas cosas de JS ya hechas
+(modales, carruseles), Bootstrap tambien seria buena opcion.
